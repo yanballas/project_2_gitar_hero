@@ -1,0 +1,686 @@
+@import "normalize.scss"
+@import "reset.scss"
+
+*
+    box-sizing: border-box
+
+@font-face 
+    font-family: "Montserrat-Reg"
+    src: url('../fonts/Montserrat-Regular.ttf')
+    font-weight: 400
+    font-style: normal
+@font-face 
+    font-family: "Montserrat-Bold"
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+    font-weight: 800
+    font-style: normal
+
+html
+    font-family: "Montserrat-Reg"
+    font-weight: 400
+
+$color-main: #F8998F
+$color-blue: #0ACDC9
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+.main-section
+    max-height: 800px
+    background: $color-main
+    padding-top: 50px
+    position: relative
+    margin-bottom: 110px
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 115px
+        margin-bottom: 100px
+    &__header
+        position: relative
+    &__logo
+        position: relative
+        z-index: 2
+        width: 184px
+        height: 95px
+        margin-bottom: 20px
+    &__line-logo
+        position: relative
+        z-index: 2
+        border-top: 1px solid rgba(0, 0, 0, 0.6)
+        width: 192px
+    &__content-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &__bublee-one
+        position: absolute
+        z-index: 1
+        top: 10px
+        left: 100px
+    &__bm-one
+        position: absolute
+        z-index: 1
+        width: 50px
+        height: 50px
+        left: 350px
+        top: 0px
+    &__bm-two
+        position: absolute
+        z-index: 1
+        width: 50px
+        height: 50px
+        left: 400px
+
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+        justify-content: flex-end
+        margin-bottom: 35px
+        text-align: right
+        font-family: "Montserrat-Bold"
+        font-weight: 800
+    &__list_item
+        margin-right: 40px
+        font-size: 18px
+        &:last-child
+            margin-right: 0px
+    &__line-nav
+        width: 584.15px   
+    a
+        text-decoration: none
+        color: #000
+
+.left-wrapper
+    position: relative
+    &__gutar-img
+        display: flex
+        justify-content: flex-end
+        width: 643px
+        height: 517px
+        position: relative
+        z-index: 5
+    &__line-left
+        position: absolute
+        width: 140px
+        height: 420px
+        top: -40px
+        left: 0px
+        z-index: 1
+    &__line-right
+        position: absolute
+        width: 650px
+        top: 0px
+        left: 485px
+        z-index: 1
+    &__rectangle-one
+        position: absolute
+        width: 570px
+        height: 180px
+        top: 150px
+        left: 0px
+        background: $color-blue
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-73deg)
+        z-index: 2
+    &__rectangle-two
+        position: absolute
+        width: 570px
+        height: 180px
+        top: 160px
+        left: 0px
+        background: #FFC7B9
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-45deg)
+        z-index: 4
+    &__rectangl-tree
+        position: absolute
+        width: 570px
+        height: 180px
+        top: 150px
+        left: -7px
+        background: #ECE3DC
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-16deg)
+        z-index: 3
+
+
+
+.right-wrapper
+    position: relative
+    &__title
+        position: relative
+        z-index: 2
+        font-size: 72px
+        margin-bottom: 20px
+        font-family: "Montserrat-Bold"
+        font-weight: 800
+    &__text
+        position: relative
+        z-index: 2
+        font-size: 60px
+        margin-bottom: 20px
+    &__line-title
+        position: relative
+        z-index: 2
+        border-top: 1px solid rgba(0, 0, 0, 0.6)
+        width: 400px
+        margin-bottom: 20px
+    &__button
+        margin-bottom: 60px
+    &__icon
+        z-index: 2
+        display: flex
+        flex-direction: row
+        justify-content: flex-end
+        &__img-list
+            margin-right: 40px
+            &:last-child
+                margin-right: 0px
+    &__img-icon
+        position: relative
+        z-index: 2
+        width: 51px
+        height: 51px
+    &__imagine
+        z-index: 2
+        width: 51px
+        height: 51px
+    &__bublee-two
+        position: absolute
+        z-index: 1
+        bottom: 300px
+        right: 280px
+    &__bublee-one
+        position: absolute
+        z-index: 1
+        bottom: 50px
+        right: 0px
+    &__bm-three
+        position: absolute
+        z-index: 1
+        bottom: 40px
+        right: 450px
+
+.buttons
+    &__main-bt
+        position: relative
+        z-index: 2
+        width: 431px
+        height: 73px
+        padding: 18px 20px
+        background: $color-blue
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+        border: none
+        font-size: 30px
+        font-family: "Montserrat-Bold"
+        font-weight: 800
+
+.second-bt
+    width: 600px
+    font-family: "Montserrat-Bold"
+    font-weight: 800
+
+.second-section
+    min-height: 650px
+    background: #fff
+    position: relative
+    margin-bottom: 30px
+    &__top-container
+        position: relative
+    &__title-first
+        z-index: 2
+    &__title-second
+        font-size: 30px
+        display: inline
+    &__bublee-two-second
+        position: absolute
+        z-index: 0
+        top: -60px
+    &__line-top
+        position: absolute
+        width: 367px
+        height: 62px
+        top: -60px
+        left: 250px
+    &__bm-four
+        position: absolute
+        top: 20px
+        left: 500px
+    &__bm-five
+        position: absolute
+        top: 0px
+        left: 700px
+    &__bm-six
+        position: absolute
+        top: 60px
+        left: 900px
+    &__bm-seven
+        position: absolute
+        top: -10px
+        left: 1090px
+    &__bm-eight
+        position: absolute
+        top: 495px
+        left: 750px
+    &__offer
+        display: flex
+        flex-direction: row
+        margin-bottom: 20px
+    &__rectangle-one
+        position: relative
+        display: flex
+        justify-content: center
+        background: $color-main
+        z-index: 2
+        width: 360px
+        height: 360px
+        margin-right: 30px
+        border-radius: 100px
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25))
+    &__rectangle-two
+        display: flex
+        justify-content: center
+        background: $color-blue
+        z-index: 2
+        width: 360px
+        height: 360px
+        margin-right: 30px
+        border-radius: 100px
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25))
+        &__img-git
+            display: flex
+            justify-content: center
+    &__rectangle-three
+        display: flex
+        justify-content: center
+        background: $color-main
+        z-index: 2
+        width: 360px
+        height: 360px
+        border-radius: 100px
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25))
+    &__bublee-one
+        position: absolute
+        z-index: 1
+        top: 260px
+        left: 200px
+    &__bublee-two
+        position: absolute
+        z-index: 1
+        top: 70px
+        left: 670px
+    &__one-text
+        position: relative
+        left: 60px
+    &__two-text
+        position: relative
+        left: 250px
+    &__three-text
+        position: relative
+        left: 400px
+    &__list
+        margin-bottom: 20px
+    &__button
+        display: flex
+        justify-content: center
+    &__line-bottom
+        position: absolute
+        bottom: 30px
+        height: 80px
+
+.line-second
+    z-index: 2
+    margin-bottom: 40px
+
+.end-section
+    background: $color-main
+    position: relative
+    padding-top: 110px
+    min-height: 800px
+
+    &__content-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+.end-lw
+    position: relative
+    &__big-logo
+        position: relative
+        top: 175px
+        right: 115px
+        width: 540px
+        height: 266px
+        transform: rotate(-90deg)
+        z-index: 2
+    &__line
+        transform: rotate(-90deg)
+        left: 100px
+        width: 540px
+        top: 10px
+    &__bm-nine
+        position: absolute
+        top: 20px
+        left: 150px
+    &__bm-eleven
+        position: absolute
+        top: 560px
+        left: 160px
+    &__bublee-one
+        transform: rotate(-180deg)
+        z-index: 1
+    &__line-up
+        position: absolute
+        z-index: 1
+        width: 206px
+        top: -40px
+
+.end-rw
+    text-align: center
+    position: relative
+    &__line
+        width: 583px
+        
+    &__text
+        max-width: 583px
+        z-index: 2
+    &__bublee-two
+        position: absolute
+        bottom: 450px
+        right: 150px
+    &__bm-twent
+        position: absolute
+        top: 80px
+        right: 40px
+    &__bm-thert
+        position: absolute
+        top: 180px
+        left: -50px
+    &__bm-fort
+        position: absolute
+        top: 330px
+        right: 170px
+    &__bm-fifet
+        position: absolute
+        bottom: 40px
+        left: 40px
+    &__bm-sixt
+        position: absolute
+        bottom: 5px
+        right: 40px
+    &__bublee-one
+        position: absolute
+        width: 110px
+        height: 110px
+        top: 270px
+        right: 30px
+        transform: rotate(-180deg)
+        z-index: 1
+    &__line-bottom
+        position: absolute
+        width: 728px
+        bottom: 20px
+        left: -60px
+
+.footer
+    &__img
+        position: absolute
+        left: -200px
+        bottom: 0px
+    &__icon
+        justify-content: center
+    &__title
+        text-align: center
+    &__line
+        width: 685px
+    &__container
+        position: relative
+        min-height: 368px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+
+@media  (max-width: 1199px)
+    .container
+        width: 960px
+    .left-wrapper__gutar-img
+        width: 575px
+    .left-wrapper__rectangle-one
+        width: 530px
+        top: 174px
+    .left-wrapper__rectangle-two
+        width: 530px
+    .left-wrapper__rectangl-tree
+        width: 530px
+    .right-wrapper
+        position: absolute
+        right: 0px
+        z-index: 2
+    .main-section__content-container
+        overflow: hidden
+    .right-wrapper__icon
+        height: 51px
+    .left-wrapper__line-left
+        top: 35px
+    .second-section__title-second
+        font-size: 25px
+    .second-section__one-text
+        left: 50px
+    .second-section__two-text
+        left: 200px
+    .second-section__three-text
+        left: 340px
+    .end-section__content-container
+        justify-content: flex-end
+        overflow: hidden
+    .end-lw__line
+        left: 210px
+    .end-lw__big-logo
+        right: -65px
+    .end-lw__bublee-one
+        position: absolute
+        left: 240px
+    .end-lw__bm-nine
+        left: 200px
+    .footer__img
+        left: -230px
+    .second-section__bm-seven
+        left: 800px
+
+
+@media  (max-width: 991px)
+    .container
+        width: 720px
+    .nav-menu__line-nav
+        width: 410px
+    .main-section__bublee-one
+        top: -50px
+        left: -20px
+    .left-wrapper__gutar-img
+        width: 400px
+        height: 400px
+    .left-wrapper__rectangle-one
+        width: 300px
+        left: -15px
+        top: 80px
+    .left-wrapper__rectangle-two
+        width: 300px
+        left: 0px
+        top: 80px
+    .left-wrapper__rectangl-tree
+        width: 300px
+        left: 3px
+        top: 80px
+    .right-wrapper__title
+        font-size: 40px
+    .right-wrapper__text
+        font-size: 30px
+    .buttons__main-bt
+        font-size: 15px
+        width: 380px
+    .right-wrapper__line-title
+        width: 380px
+    .second-section__rectangle-one
+        width: 200px
+        overflow: hidden
+    .second-section__rectangle-two
+        width: 200px
+        overflow: hidden
+    .second-section__rectangle-three
+        width: 200px
+        overflow: hidden
+    .rectangle-one__img-git
+        width: 200px
+    .second-section__title-second
+        font-size: 15px
+    .second-section__one-text
+        left: 40px
+    .second-section__two-text
+        left: 165px
+    .second-section__three-text
+        left: 275px
+    .second-section
+        min-height: 500px
+    .second-section__line-bottom
+        bottom: -13px
+        height: 65px
+    .second-section__bublee-two
+        left: 360px
+    .second-section__bm-five
+        left: 330px
+    .second-section__bm-seven
+        left: 637px
+    .second-section__bm-six
+        top: -79px
+        left: 410px
+    .second-section__bm-eight
+        left: 590px
+    .end-section
+        min-height: 500px
+    .end-lw__big-logo
+        width: 350px
+        top: 95px
+        right: -30px
+    .end-lw__line
+        left: 150px
+        top: -65px
+    .end-lw__bublee-one
+        left: 65px
+        top: 80px
+    .end-lw__bm-ten
+        position: absolute
+        right: 276px
+
+
+@media  (max-width: 767px)
+    .container
+        width: 540px
+    .nav-menu
+        position: fixed
+        top: 0px
+        right: -100%
+        height: 125vh
+        width: 50%
+        background: $color-blue
+        z-index: 20
+        &__line-nav
+            display: none
+        &__list
+            height: 100%
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+        &__list_item
+            margin-right: 0px
+
+    .hamburger
+        width: 30px
+        position: fixed
+        top: 40px
+        right: 30px
+        height: 14px
+        z-index: 30
+        span
+            height: 2px
+            width: 100%
+            display: block
+            background: #000
+            margin-bottom: 4px
+            transition: 1s all
+            &:last-child
+                margin-bottom: 0px
+    .hamburger_active
+        span
+            z-index: 30
+            margin-bottom: -2px 
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+    .nav-menu_active
+        display: block
+        right: 0px
+        transition: 1s all
+    .main-section
+        min-height: 500px
+        &__nav-container
+            margin-bottom: 20px
+    .left-wrapper
+        display: none
+    .right-wrapper
+        position: static
+        text-align: center
+        width: 100%
+        &__line-title
+            width: 100%
+        &__button
+            margin-bottom: 20px
+        &__bublee-two
+            right: 77px
+    .second-section__line-top
+        left: 120px
+    .second-section__bm-seven
+        display: none
+    .second-section__bublee-two
+        display: none
+    .second-section__one-text
+        left: 20px
+    .second-section__two-text
+        left: 110px
+    .second-section__three-text
+        left: 180px
+    .second-section__bm-eight
+        display: none
+    .second-section__line-bottom
+        display: none
+    .end-section
+        padding-top: 20px
+        min-height: 200px
+    .end-lw__big-logo
+        display: none
+    .footer__img
+        left: -358px
+                
+@media  (max-width: 575px)
+    .container
+        width: 100%
+    .main-section__bm-two
+        display: none
+    .second-section__line-top
+        display: none
+    .second-section__bm-six
+        display: none
+    .second-section__bm-four
+        display: none
+    .second-section__list
+        display: none
+    .footer__img
+        display: none
